@@ -1,17 +1,20 @@
 import React from 'react'
 
-class SearchBar extends React.Component {
-  render() {
-    return (
-      <div className="sixteen wide column">
-        <div className="ui segment secondary">
-          <div className="ui huge fluid input">
-            <input type="text" placeholder="Search Youtube..."/>
-          </div>
+const SearchBar = (props) => {
+  const {handleClick, handleChange} = props
+
+  return (
+    <div className="sixteen wide column">
+      <div className="ui segment secondary">
+        <div className="ui huge fluid input">
+          <form onSubmit={handleClick} >
+            <input onChange={handleChange} value={props.searchTerm} type="text" placeholder="Search Youtube..."/>
+            <input type="submit" className="ui red button" value="Search"></input>
+          </form>
         </div>
       </div>
-    )
-  }
+    </div>
+  )
 }
 
 export default SearchBar

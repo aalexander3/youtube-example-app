@@ -61,3 +61,41 @@ const videoSearch = _.debounce(term => {
 
 // videoSearch is now a function you can pass as the callback prop
 ```
+
+
+
+
+
+
+
+components
+
+App *needs state* & _make fetch_
+ - Search
+ - VideoContainer
+   - VideoDisplay
+   - VideoList
+    - VideoItem
+
+next steps:
+  - make the search bar work
+    - takes in a term, fetches a new list of videos related to that term
+
+  - select a video from the sidebar and have it render as the detail
+
+- LifeCycle Methods, especially componentDidMount
+- finish controlling our input
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  -->
