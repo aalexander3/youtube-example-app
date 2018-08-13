@@ -21,7 +21,7 @@ const embedUrl = `https://www.youtube.com/embed/${videoId}`;
 
 There is an example API response in YoutubeContainer.js
 
-When building app with students, try to follow something along the lines of the steps described in *Fullstack React* for building any React application
+Try to follow something along the lines of the steps described in *Fullstack React* for building any React application
 
 1. Break the app into components
 2. Build a static version of the app
@@ -45,28 +45,6 @@ export default {
 };
 
 ```
-
-#### lodash debounce
-
-lodash debounce method is a cool feature to add (time permitting):
-
-```js
-//_.debounce is passed a function and an amount of time (n) in milliseconds.
-// it will retunr a copy of the passed in function that can only be called
-// once per n seconds
-
-const videoSearch = _.debounce(term => {
-  this.videoSearch(term);
-}, 200);
-
-// videoSearch is now a function you can pass as the callback prop
-```
-
-
-
-
-
-
 
 components
 
@@ -98,4 +76,4 @@ next steps:
 
 
 
-<!--  -->
+
